@@ -1,7 +1,14 @@
 ---
-title: "The idea" 
-meta_title: "About"
-description: "this is meta description"
+title: "The idea"
+meta_title: "About TLBC.pl | Approach and values"
+meta_description: "How TLBC.pl works with clients: experience-led security testing, red teaming, and research — and why we focus on the questions others skip."
+description: "How TLBC.pl works with clients: experience-led security testing, red teaming, and research — and why we focus on the questions others skip."
+keywords:
+  - TLBC
+  - about
+  - penetration testing
+  - red team
+  - security research
 image: "/images/idea.png"
 draft: false
 ---

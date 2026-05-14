@@ -22,12 +22,20 @@ mainSections = ["blog"]
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
-#google_tag_manager = "" # example: G-XXXXXXXXXX
+google_tag_manager = "GTM-N78PVWJG"
 #google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
 copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
+
+# Registered company details (footer + contact)
+[company]
+name = "TLBC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+address = "UL. WŁOCŁAWSKA 167, 87-100 TORUŃ"
+nip = "9562397964"
+krs = "0001138405"
+regon = "540197071"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -53,14 +61,9 @@ show_tags = true
 show_categories = true
 
 
-# seo meta data for OpenGraph / Twitter Card
-# seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
-[metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
-image = "images/og-image.png"
-
+# SEO defaults (Open Graph / Twitter) are defined per language in hugo.toml
+# under [languages.<lang>.params.metadata] so titles, descriptions, and
+# keywords match each site language. See basic-seo in the theme for fields.
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications

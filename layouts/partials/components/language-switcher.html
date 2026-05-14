@@ -1,0 +1,27 @@
+{{/* Overrides theme: language switcher for all pages; translated pages keep path, others jump to each language home. */}}
+{{ $class := .Class }}
+{{ $context := .Context }}
+{{ if gt (len site.Languages) 1 }}
+  <select class="{{ $class }}" aria-label="Language" onchange="location = this.value">
+    {{ if or $context.IsHome $context.IsTranslated }}
+      {{ $base := urls.Parse site.Home.Permalink }}
+      {{ $pageLang := $context.Lang }}
+      {{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
+      {{ range site.Home.AllTranslations }}
+        <option
+          value="{{ replace (add .RelPermalink $pageLink) `//` `/` | relURL }}"
+          {{ if eq $context.Lang .Language.Lang }}selected{{ end }}>
+          {{ .Language.LanguageName }}
+        </option>
+      {{ end }}
+    {{ else }}
+      {{ range site.Home.AllTranslations }}
+        <option
+          value="{{ .RelPermalink | relURL }}"
+          {{ if eq $context.Lang .Language.Lang }}selected{{ end }}>
+          {{ .Language.LanguageName }}
+        </option>
+      {{ end }}
+    {{ end }}
+  </select>
+{{ end }}

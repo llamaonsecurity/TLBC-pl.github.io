@@ -73,4 +73,14 @@ features:
       enable: false
       label: ""
       link: ""
+
+# SEO (homepage)
+meta_title: "TLBC.pl | Penetration testing, red teaming & security research"
+meta_description: "TLBC.pl — penetration testing, red teaming, and security research. We help organisations find gaps, validate controls, and improve security posture."
+keywords:
+  - TLBC
+  - penetration testing
+  - red teaming
+  - cybersecurity
+  - security research
 ---

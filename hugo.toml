@@ -11,9 +11,6 @@ timeZone = "Europe/Warsaw"
 paginate = 2 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
-# disable language
-disableLanguages = ["pl"
-] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 ### Language ####
@@ -30,6 +27,30 @@ defaultContentLanguageInSubdir = true
     weight = 1
     [languages.en.params]
       subtitle = 'Reference, Tutorials, and Explanations'
+      [languages.en.params.metadata]
+        description = "TLBC.pl — penetration testing, red teaming, and security research. We help organisations find gaps, validate controls, and improve security posture."
+        keywords = ["TLBC", "penetration testing", "red teaming", "security research", "cybersecurity", "ethical hacking", "Toruń", "Poland"]
+        image = "images/logo.png"
+        twitter = "tlbcpl"
+  [languages.pl]
+    contentDir = 'content/polish'
+    disabled = false
+    languageCode = 'pl-PL'
+    languageDirection = 'ltr'
+    languageName = 'Polski'
+    title = 'TLBC.pl PL'
+    weight = 2
+    [languages.pl.params]
+      subtitle = 'Testy penetracyjne, red team i badania bezpieczeństwa'
+      [languages.pl.params.metadata]
+        description = "TLBC.pl — testy penetracyjne, red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
+        keywords = ["TLBC", "testy penetracyjne", "red team", "badania bezpieczeństwa", "cyberbezpieczeństwo", "ethical hacking", "Toruń", "Polska"]
+        image = "images/logo.png"
+        twitter = "tlbcpl"
+      [languages.pl.params.navigation_button]
+      enable = true
+      label = "Umów konsultację"
+      link = "https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/"
 ########################### Services #############################
 [services]
 [services.googleAnalytics]

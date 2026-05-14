@@ -30,3 +30,15 @@
 
 - id: empty_search_results_placeholder
   translation: Type something to search..
+
+- id: contact_eyebrow
+  translation: "Get in touch"
+
+- id: contact_intro
+  translation: "Feel free to reach us over contact[at]tlbc.pl."
+
+- id: contact_book_meeting
+  translation: "Or, book a meeting now."
+
+- id: company_details_heading
+  translation: "Company information"

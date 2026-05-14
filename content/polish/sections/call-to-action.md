@@ -1,11 +1,11 @@
 ---
 enable: true
-title: "Ready to build your next project with Hugo?"
+title: "Gotowy na kolejny projekt z Hugo?"
 image: "/images/call-to-action.png"
-description: "Experience the future of web development with Hugoplate and Hugo. Build lightning-fast static sites with ease and flexibility."
+description: "Poznaj nowoczesny rozwój stron z Hugoplate i Hugo. Buduj błyskawiczne witryny statyczne z elastycznością i łatwością utrzymania."
 button:
   enable: true
-  label: "Get Started Now"
+  label: "Umów spotkanie"
   link: "https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/"
 
 # don't create a separate page

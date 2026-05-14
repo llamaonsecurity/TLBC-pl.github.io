@@ -1,64 +1,26 @@
-############# English navigation ##############
-
-# main menu
-
-
+############# Polish navigation ##############
 
 [[main]]
-name = "O nas"
-url = "pl/about/"
+name = "Strona główna"
+url = "/"
 weight = 1
 
 [[main]]
-name = "Contact"
-url = "pl/contact/"
+name = "O nas"
+url = "about/"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "elements/"
+name = "Kontakt"
+url = "contact/"
 weight = 3
 
-[[main]]
-weight = 4
-name = "Pages"
-hasChildren = true
-
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "blog/"
-
-
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "authors/"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "categories/"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "404/"
-
-
-# footer menu
 [[footer]]
-name = "About"
+name = "O nas"
 url = "about/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "elements/"
-weight = 2
-
-[[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+name = "Kontakt"
+url = "contact/"
 weight = 3

@@ -1,49 +1,86 @@
 ---
 # Banner
 banner:
-  title: "We do security"
-  content: "TLBC.pl is here to provide high quality services regarding penetration testing, red teaming and security research"
-  image: "/images/banner.png"
+  title: "Zajmujemy się bezpieczeństwem"
+  content: "TLBC.pl oferuje usługi najwyższej jakości: testy penetracyjne, red team oraz badania bezpieczeństwa."
+  image: "/images/banner.jpg"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Inżynieria społeczna"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "Pozwól nam ocenić odporność organizacji na ataki socjotechniczne. Podejście proaktywne pozwala wykryć słabe punkty, wzmocnić szkolenia z świadomości bezpieczeństwa i wdrożyć zabezpieczenia ograniczające ryzyko rzeczywistych incydentów."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Kampanie phishingowe i smishing — wiadomości przez firmowe kanały komunikacji"
+      - "Symulacja działań APT — omijanie zabezpieczeń sieciowych w celu uzyskania dostępu do stacji roboczej"
+      - "Próby uzyskania fizycznego dostępu do wybranych pomieszczeń w siedzibie"
+      - "Wymierzony phishing wobec kadry zarządzającej"
+      - "Weryfikacja skuteczności ochrony przed malware"
+
     button:
       enable: false
-      label: "Get Started Now"
+      label: "Umów spotkanie"
       link: "#"
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "Testy bezpieczeństwa"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "Dogłębnie przeanalizujemy Twój stos technologiczny i wskażemy obszary stanowiące ryzyko dla firmy."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Testy penetracyjne, audyty, oceny podatności"
+      - "Weryfikacja słabych punktów infrastruktury"
+      - "Przejrzyste raporty z każdej oceny"
+      - "Dobre praktyki we wszystkich obszarach"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Umów spotkanie"
+      link: "https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "Przegląd kodu źródłowego"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Przeanalizujemy bezpieczeństwo Twojego kodu. Usługa identyfikuje słabości mogące prowadzić do podatności, wspiera zgodność z bezpiecznym programowaniem i ogranicza ryzyko wykorzystania przez atakujących."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Analiza statyczna kodu"
+      - "Ręczny przegląd kodu"
+      - "Audyty bibliotek i zależności stron trzecich"
+      - "Przegląd konfiguracji bezpieczeństwa"
     button:
       enable: false
       label: ""
       link: ""
+
+  - title: "Bezpieczne projektowanie"
+    image: "/images/service-4.png"
+    content: "Wiedzę zdobyliśmy czasem — Ty możesz z niej skorzystać od razu."
+    bulletpoints:
+      - "Dobre praktyki"
+      - "Pokrycie popularnych języków"
+      - "Frameworki mobilne i webowe"
+    button:
+      enable: true
+      label: "Umów spotkanie"
+      link: "https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/"
+
+  - title: "Inne usługi"
+    image: "/images/service-5.png"
+    content: "Nie znalazłeś tego, czego szukasz? Napisz — przygotujemy ofertę dopasowaną do Twoich potrzeb."
+    bulletpoints:
+      - "Threat Intelligence"
+      - "R&D"
+      - "IoT"
+      - "OT"
+      - "Inne"
+    button:
+      enable: false
+      label: ""
+      link: ""
+
+# SEO (strona główna)
+meta_title: "TLBC.pl | Testy penetracyjne, red team i badania bezpieczeństwa"
+meta_description: "TLBC.pl — testy penetracyjne, red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
+keywords:
+  - TLBC
+  - testy penetracyjne
+  - red team
+  - cyberbezpieczeństwo
+  - badania bezpieczeństwa
 ---

@@ -1,0 +1,107 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="mx-auto max-w-5xl">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+          <div
+            class="contact-card flex h-full min-h-0 flex-col rounded-2xl border border-border bg-theme-light/80 p-6 shadow-sm dark:border-darkmode-border dark:bg-darkmode-theme-light/40 sm:p-8 lg:p-9"
+            role="region"
+            aria-labelledby="contact-card-label">
+            {{/* <p> not <h2>: theme h2 rules (huge type) override utility text-xs */}}
+            <p
+              id="contact-card-label"
+              class="mb-4 text-xs font-semibold uppercase tracking-widest text-light dark:text-darkmode-light">
+              {{ i18n "contact_eyebrow" }}
+            </p>
+            <p
+              class="mb-6 flex-1 text-base font-normal leading-relaxed not-italic text-text dark:text-darkmode-text sm:mb-8">
+              {{ i18n "contact_intro" }}
+            </p>
+            <a
+              href="https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/"
+              class="btn btn-primary btn-sm normal-case w-full shrink-0 self-start text-center sm:w-auto">
+              {{ i18n "contact_book_meeting" }}
+            </a>
+          </div>
+          <div class="min-w-0">
+            {{ partial "company-legal" (dict "variant" "contact") }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- google map -->
+  {{ with site.Params.google_map }}
+    {{ if .enable }}
+      <div
+        id="map"
+        style="height: 400px;"
+        data-latitude="{{ .map_latitude }}"
+        data-longitude="{{ .map_longitude }}"
+        data-marker="{{ .map_marker | relURL }}"
+        data-marker-name="{{ site.Title }}"></div>
+    {{ end }}
+  {{ end }}
+
+  {{ with site.Params.subscription }}
+    {{ if .enable }}
+      <!-- subscription form -->
+      <form
+        action="{{ .mailchimp_form_action | safeURL }}"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        novalidate="novalidate">
+        <div class="input-group w-75 mx-auto mb-3">
+          <input
+            type="email"
+            name="EMAIL"
+            placeholder="Email"
+            class="form-control required email mce_inline_error"
+            id="mce-EMAIL"
+            aria-required="true"
+            autocomplete="off"
+            required />
+          <button
+            class="input-group-text"
+            name="subscribe"
+            id="mc-embedded-subscribe">
+            {{ .button_label }}
+          </button>
+        </div>
+        <input
+          type="hidden"
+          name="EMAILTYPE"
+          id="mce-EMAILTYPE-0"
+          value="html" />
+        <div style="position:absolute;left:-5000px" aria-hidden="true">
+          <input type="text" name="{{ .name }}" tabindex="-1" />
+        </div>
+      </form>
+      <div id="mce-responses" class="clear">
+        <div
+          class="response text-white"
+          id="mce-error-response"
+          style="display:none"></div>
+        <div
+          class="response text-white"
+          id="mce-success-response"
+          style="display:none"></div>
+      </div>
+      <script
+        type="text/javascript"
+        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+      <!-- /subscription form -->
+    {{ end }}
+  {{ end }}
+
+  {{ if site.Params.google_map.enable }}
+    {{ $gmap:= resources.Get "plugins/maps/google-map.js" }}
+    <script defer src="{{ $gmap.RelPermalink }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.google_map.map_api_key }}&libraries=places"></script>
+  {{ end }}
+
+{{ end }}
