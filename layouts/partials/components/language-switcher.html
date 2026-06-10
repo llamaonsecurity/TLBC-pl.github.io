@@ -1,7 +1,7 @@
 {{/* Overrides theme: language switcher for all pages; translated pages keep path, others jump to each language home. */}}
 {{ $class := .Class }}
 {{ $context := .Context }}
-{{ if gt (len site.Languages) 1 }}
+{{ if and site.Home (gt (len site.Languages) 1) }}
   <select class="{{ $class }}" aria-label="Language" onchange="location = this.value">
     {{ if or $context.IsHome $context.IsTranslated }}
       {{ $base := urls.Parse site.Home.Permalink }}

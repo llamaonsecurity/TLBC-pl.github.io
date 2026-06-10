@@ -5,27 +5,48 @@
         <!-- navbar brand/logo -->
         <a
           class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
+          href="{{ with site.Home }}{{ .RelPermalink }}{{ else }}/{{ end }}">
           {{ partial "logo" }}
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
+            {{ $url := .URL }}
+            {{ $isExternal := findRE `^http` $url }}
+            {{ $isRootPath := hasPrefix $url "/" }}
+            {{ $isPdf := findRE `\.pdf$` (strings.ToLower $url) }}
+            {{ $href := $url | relLangURL }}
+            {{ if findRE `^#` $url }}
+              {{ $homeURL := "/" }}
+              {{ with site.Home }}
+                {{ $homeURL = .RelPermalink }}
+              {{ end }}
+              {{ if not $.IsHome }}
+                {{ $href = printf "%s%s" $homeURL $url }}
+              {{ else }}
+                {{ $href = $url }}
+              {{ end }}
+            {{ else if $isExternal }}
+              {{ $href = $url }}
+            {{ else if $isRootPath }}
+              {{ $href = $url | relURL }}
+            {{ end }}
             <li class="m-3 inline-block">
               <a
-                {{ if findRE `^http` .URL }}
+                {{ if or $isExternal $isPdf }}
                   target="_blank" rel="noopener"
                 {{ end }}
-                href="{{ if findRE `^#` .URL }}
-                  {{ if not $.IsHome }}
-                    {{ site.Home.RelPermalink }}
-                  {{ end }}{{ .URL }}
-                {{ else }}
-                  {{ .URL | relLangURL }}
-                {{ end }}"
+                href="{{ $href }}"
                 >{{ .Name }}</a
               >
+            </li>
+          {{ end }}
+          {{ with site.Params.privacy_policy.link }}
+            <li class="m-3 inline-block">
+              <a href="{{ . | relURL }}" target="_blank" rel="noopener">
+                {{ i18n "privacy_policy" }}
+              </a>
             </li>
           {{ end }}
         </ul>

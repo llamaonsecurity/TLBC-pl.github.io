@@ -1,0 +1,64 @@
+{{ define "main" }}
+  {{ with .Params.who_we_are }}
+    <section class="section-sm bg-gradient">
+      <div class="container">
+        <h2 class="mb-10 text-center text-h3 md:mb-12 md:text-h2">
+          {{ .title }}
+        </h2>
+
+        <div class="row items-center justify-between">
+          <div class="mb-8 flex justify-center md:col-5 md:mb-0">
+            <div
+              class="about-mascot flex h-44 w-44 items-center justify-center rounded-full bg-theme-light p-6 shadow-sm dark:bg-darkmode-theme-light md:h-52 md:w-52 lg:h-56 lg:w-56">
+              {{ partial "image" (dict "Src" .image "Alt" .title "Class" "mx-auto max-h-full max-w-full object-contain" "Size" "200x200") }}
+            </div>
+          </div>
+          <div class="md:col-7">
+            <p class="text-base leading-relaxed text-text dark:text-darkmode-text md:text-lg">
+              {{ .intro | markdownify }}
+            </p>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-4xl md:mt-12">
+          <p class="mb-6 text-base leading-relaxed text-text dark:text-darkmode-text md:text-lg">
+            {{ .team_intro | markdownify }}
+          </p>
+          <ul class="about-highlights space-y-4">
+            {{ range .highlights }}
+              <li class="relative pl-7 text-base leading-relaxed text-text dark:text-darkmode-text md:text-lg">
+                {{ . | markdownify }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-7 text-center">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
+          <h2 class="h3 mb-6">{{ .Title }}</h2>
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.about_closing }}
+    <section class="section-sm pt-0">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="md:col-10 lg:col-8 text-center">
+            <div class="content text-base leading-relaxed">
+              {{ . | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

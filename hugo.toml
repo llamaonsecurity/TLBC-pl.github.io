@@ -28,8 +28,8 @@ defaultContentLanguageInSubdir = true
     [languages.en.params]
       subtitle = 'Reference, Tutorials, and Explanations'
       [languages.en.params.metadata]
-        description = "TLBC.pl — penetration testing, red teaming, and security research. We help organisations find gaps, validate controls, and improve security posture."
-        keywords = ["TLBC", "penetration testing", "red teaming", "security research", "cybersecurity", "ethical hacking", "Toruń", "Poland"]
+        description = "TLBC.pl — red teaming and security research. We help organisations find gaps, validate controls, and improve security posture."
+        keywords = ["TLBC", "red teaming", "security research", "cybersecurity", "ethical hacking", "Toruń", "Poland"]
         image = "images/logo.png"
         twitter = "tlbcpl"
   [languages.pl]
@@ -41,10 +41,10 @@ defaultContentLanguageInSubdir = true
     title = 'TLBC.pl PL'
     weight = 2
     [languages.pl.params]
-      subtitle = 'Testy penetracyjne, red team i badania bezpieczeństwa'
+      subtitle = 'Red team i badania bezpieczeństwa'
       [languages.pl.params.metadata]
-        description = "TLBC.pl — testy penetracyjne, red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
-        keywords = ["TLBC", "testy penetracyjne", "red team", "badania bezpieczeństwa", "cyberbezpieczeństwo", "ethical hacking", "Toruń", "Polska"]
+        description = "TLBC.pl — red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
+        keywords = ["TLBC", "red team", "badania bezpieczeństwa", "cyberbezpieczeństwo", "ethical hacking", "Toruń", "Polska"]
         image = "images/logo.png"
         twitter = "tlbcpl"
       [languages.pl.params.navigation_button]
@@ -69,6 +69,10 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 [[module.mounts]]
 source = "assets"
 target = "assets"
+
+[[module.mounts]]
+source = "static"
+target = "static"
 
 [[module.mounts]]
 source = "hugo_stats.json"

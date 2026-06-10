@@ -1,1 +1,15 @@
-// Add your own custom styles here
+// About page — "Who we are" highlight list
+.about-highlights {
+  li::before {
+    @apply absolute left-0 top-[0.35em] font-semibold text-light dark:text-darkmode-light;
+    content: ">";
+  }
+
+  li strong {
+    @apply font-semibold text-dark dark:text-darkmode-dark;
+  }
+}
+
+.about-mascot img {
+  @apply max-h-[9rem] w-auto md:max-h-[10rem];
+}

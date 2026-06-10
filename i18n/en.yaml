@@ -42,3 +42,15 @@
 
 - id: company_details_heading
   translation: "Company information"
+
+- id: privacy_policy
+  translation: "Privacy Policy"
+
+- id: contact_privacy_policy_link
+  translation: "Link to privacy policy"
+
+- id: contact_gdpr_disclaimer_heading
+  translation: "Disclaimer"
+
+- id: contact_gdpr_disclaimer
+  translation: 'The controller of your personal data is TLBC spółka z ograniczoną odpowiedzialnością, with its registered office in Toruń. The data will be processed for the purpose of scheduling a meeting and conducting further correspondence based on the controller''s legitimate interest (Article 6(1)(f) GDPR). You can contact us by sending a message to: <a href="mailto:gdpr@tlbc.pl" class="font-medium underline underline-offset-4 hover:text-primary dark:hover:text-darkmode-primary">gdpr@tlbc.pl</a>. If you would like to learn more about how we process your personal data, please review our <a href="%s" class="font-medium underline underline-offset-4 hover:text-primary dark:hover:text-darkmode-primary" target="_blank" rel="noopener">Privacy Policy</a>.'

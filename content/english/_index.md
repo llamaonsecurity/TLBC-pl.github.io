@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "We do security"
-  content: "TLBC.pl is here to provide high quality services regarding penetration testing, red teaming and security research"
+  content: "TLBC.pl is here to provide high quality services regarding red teaming and security research"
   image: "/images/banner.jpg"
 
 # Features
@@ -26,7 +26,7 @@ features:
     image: "/images/service-2.png"
     content: "We will perform a deep dive into your technology stack to find out if something possess a risk to your company."
     bulletpoints:
-      - "Pentests, Audits , Vulnerability Assessment"
+      - "Audits and vulnerability assessments"
       - "Verifcation of weak points in the infrastructure "
       - "Clear and readable reports from each assessment."
       - "Best practices in all fields"
@@ -75,11 +75,10 @@ features:
       link: ""
 
 # SEO (homepage)
-meta_title: "TLBC.pl | Penetration testing, red teaming & security research"
-meta_description: "TLBC.pl — penetration testing, red teaming, and security research. We help organisations find gaps, validate controls, and improve security posture."
+meta_title: "TLBC.pl | Red teaming & security research"
+meta_description: "TLBC.pl — red teaming and security research. We help organisations find gaps, validate controls, and improve security posture."
 keywords:
   - TLBC
-  - penetration testing
   - red teaming
   - cybersecurity
   - security research

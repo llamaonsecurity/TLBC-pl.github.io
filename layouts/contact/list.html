@@ -25,6 +25,30 @@
               class="btn btn-primary btn-sm normal-case w-full shrink-0 self-start text-center sm:w-auto">
               {{ i18n "contact_book_meeting" }}
             </a>
+
+            {{ with site.Params.privacy_policy.link }}
+              <div
+                class="mt-6 border-t border-border pt-6 dark:border-darkmode-border sm:mt-8 sm:pt-8"
+                aria-labelledby="contact-gdpr-label">
+                <p
+                  id="contact-gdpr-label"
+                  class="mb-3 text-xs font-semibold uppercase tracking-widest text-light dark:text-darkmode-light">
+                  {{ i18n "contact_gdpr_disclaimer_heading" }}
+                </p>
+                <p class="text-sm font-normal leading-relaxed not-italic text-text dark:text-darkmode-text">
+                  {{ printf (i18n "contact_gdpr_disclaimer") (. | relURL) | safeHTML }}
+                </p>
+                <p class="mt-4 text-sm text-text dark:text-darkmode-text">
+                  <a
+                    href="{{ . | relURL }}"
+                    class="font-medium underline underline-offset-4 hover:text-primary dark:hover:text-darkmode-primary"
+                    target="_blank"
+                    rel="noopener">
+                    {{ i18n "contact_privacy_policy_link" }}
+                  </a>
+                </p>
+              </div>
+            {{ end }}
           </div>
           <div class="min-w-0">
             {{ partial "company-legal" (dict "variant" "contact") }}

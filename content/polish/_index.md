@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Zajmujemy się bezpieczeństwem"
-  content: "TLBC.pl oferuje usługi najwyższej jakości: testy penetracyjne, red team oraz badania bezpieczeństwa."
+  content: "TLBC.pl oferuje usługi najwyższej jakości: red team oraz badania bezpieczeństwa."
   image: "/images/banner.jpg"
 
 # Features
@@ -22,11 +22,11 @@ features:
       label: "Umów spotkanie"
       link: "#"
 
-  - title: "Testy bezpieczeństwa"
+  - title: "Audyty i oceny"
     image: "/images/service-2.png"
     content: "Dogłębnie przeanalizujemy Twój stos technologiczny i wskażemy obszary stanowiące ryzyko dla firmy."
     bulletpoints:
-      - "Testy penetracyjne, audyty, oceny podatności"
+      - "Audyty, oceny podatności"
       - "Weryfikacja słabych punktów infrastruktury"
       - "Przejrzyste raporty z każdej oceny"
       - "Dobre praktyki we wszystkich obszarach"
@@ -75,11 +75,10 @@ features:
       link: ""
 
 # SEO (strona główna)
-meta_title: "TLBC.pl | Testy penetracyjne, red team i badania bezpieczeństwa"
-meta_description: "TLBC.pl — testy penetracyjne, red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
+meta_title: "TLBC.pl | Red team i badania bezpieczeństwa"
+meta_description: "TLBC.pl — red team i badania bezpieczeństwa. Pomagamy organizacjom wykrywać luki, weryfikować zabezpieczenia i podnosić poziom cyberbezpieczeństwa."
 keywords:
   - TLBC
-  - testy penetracyjne
   - red team
   - cyberbezpieczeństwo
   - badania bezpieczeństwa

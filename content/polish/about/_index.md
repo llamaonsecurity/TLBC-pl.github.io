@@ -1,66 +1,51 @@
 ---
 title: "Pomysł"
 meta_title: "O TLBC.pl | Podejście i wartości"
-meta_description: "Jak TLBC.pl pracuje z klientami: doświadczenie w testach bezpieczeństwa, red teamie i badaniach — i dlaczego skupiamy się na pytaniach, które inni pomijają."
-description: "Jak TLBC.pl pracuje z klientami: doświadczenie w testach bezpieczeństwa, red teamie i badaniach — i dlaczego skupiamy się na pytaniach, które inni pomijają."
+meta_description: "Jak TLBC.pl pracuje z klientami: doświadczenie w red teamie i badaniach — i dlaczego skupiamy się na pytaniach, które inni pomijają."
+description: "Jak TLBC.pl pracuje z klientami: doświadczenie w red teamie i badaniach — i dlaczego skupiamy się na pytaniach, które inni pomijają."
 keywords:
   - TLBC
   - o nas
-  - testy penetracyjne
   - red team
   - bezpieczeństwo
 image: "/images/idea.png"
 draft: false
+
+who_we_are:
+  title: "Kim jesteśmy?"
+  image: "/images/logo.png"
+  intro: |
+    **TLBC** to **butik cyberbezpieczeństwa z Torunia**, tworzony przez **praktyków** ofensywnego bezpieczeństwa. Zajmujemy się red teamingiem, inżynierią społeczną oraz badaniami bezpieczeństwa — od aplikacji webowych i mobilnych, przez infrastrukturę i środowiska chmurowe, po nietypowe urządzenia i systemy wbudowane.
+  team_intro: |
+    W **naszym zespole** znajdują się osoby, które:
+  highlights:
+    - "są **odkrywcami podatności CVE** m.in. w produktach **Oracle, Cisco, Google i Airbus Group**,"
+    - "figurują w **hall of fame Microsoft, Siemens, BMW, Nokia, Red Hat i CERT-EU**,"
+    - "reprezentują Polskę na ćwiczeniach **NATO Locked Shields**,"
+    - "reprezentowały Polskę w **HackerOne Ambassador World Cup**,"
+    - "posiadają branżowe certyfikaty i dzielą się wiedzą na konferencjach w Krakowie (CONFidence), Warszawie (BSides) i Dubaju (GISEC, GITEX),"
+    - "specjalizują się w **informatyce śledczej** i odzyskiwaniu danych — analizie powłamaniowej i reagowaniu na incydenty (m.in. po atakach ransomware) oraz konsultacjach DevSecOps."
+
+about_closing: |
+  TLBC działa międzynarodowo, obsługując obecnie klientów m.in. w Szwajcarii, Francji, Stanach Zjednoczonych, Australii i Zjednoczonych Emiratach Arabskich.
+
+  Siedziba znajduje się w Toruńskim Parku Technologicznym.
 ---
 
+`Odkryjmy, jakie pytania zostały pominięte.`
 
-`Odkryjmy, jakich pytań jeszcze nie zadałeś.`
-
- Wniesiemy nasze doświadczenie i spróbujemy uzupełnić te luki, dając spostrzeżenia i rozwiązania, które wzmocnią Twoje podejście i upewnią, że nic nie umknie uwadze.
+Wniesiemy nasze doświadczenie do współpracy i uzupełnimy te luki — konkretnymi spostrzeżeniami i rozwiązaniami, które wzmocnią Twoje podejście do bezpieczeństwa i sprawią, że nic istotnego nie umknie uwadze.
 
 `Rób ciekawe rzeczy z ciekawymi ludźmi.`
 
- Łącząc naszą perspektywę z zasadą „ciekawe rzeczy z ciekawymi ludźmi”, chcemy dostarczać innowacyjne rozwiązania, które wniosą realną wartość do Twojego projektu.
-### Zasada B T S
+Łącząc tę perspektywę z przekonaniem, że warto robić ciekawe rzeczy z ciekawymi ludźmi, chcemy dostarczać rozwiązania, które realnie wnoszą wartość do Twojego projektu.
 
-W TLBC wierzymy, że gdy coś robisz, powinieneś o tym opowiedzieć i podzielić się pomysłem ze społecznością.
-- ***Break or Build*** — eksploruj możliwości — spodziewaj się przygody,
-- ***Tell*** — opowiadaj o metodologii — licz na usprawnienia dzięki krytyce i komunikacji,
-- ***Share*** — udostępniaj kod i wyniki badań — licz na feedback, który poprawi jakość.
+### Zasada BTS
 
+W TLBC wierzymy, że gdy coś odkrywasz lub budujesz, powinieneś o tym opowiedzieć i podzielić się tym ze społecznością.
 
-Ciągłe dążenie do doskonalenia napędza nas na co dzień. Możesz liczyć, że ten sam impuls wniesiemy do Twojej firmy!
+- **_Break or Build_** — eksploruj możliwości; licz się z wyzwaniem i odkryciami.
+- **_Tell_** — opowiadaj o metodologii; licz na lepsze pomysły dzięki feedbackowi i rozmowie.
+- **_Share_** — udostępniaj kod i wyniki badań; licz na usprawnienia dzięki otwartej recenzji.
 
-# Założyciele
-
-Założyciele TLBC to doświadczeni badacze bezpieczeństwa z wieloletnią praktyką w czołowych polskich firmach cyberbezpieczeństwa.
-
-Testowali zabezpieczenia dla dużych klientów w Europie, Azji Południowo-Wschodniej, Ameryce Północnej i Australii — m.in. z sektorów telekomunikacji, finansów, medycyny i lotnictwa.
-
-Poza klasycznymi testami penetracyjnymi realizowali liczne projekty dotyczące bezpieczeństwa nietypowych urządzeń, wymagające szerokiej wiedzy z wielu dziedzin.
-
-Są w hall of fame wielu organizacji, którym pomogli zabezpieczyć systemy, oraz aktywnie uczestniczą w programach bug bounty.
-
-Obok działalności komercyjnej prowadzą także niezależne projekty badawcze, dzieląc się wnioskami jako prelegenci na specjalistycznych konferencjach.
-
-## Daniel Kalinowski
-
-- W hall of fame m.in. Siemens, BMW, Microsoft, CERT-EU.
-- Zgłaszający CVE w produktach Oracle, Stormshield i Cisco.
-- Uczestnik programów bug bounty m.in. AT&T i U.S. Department of Defense.
-- Autor techniki przemytu payloadu PHP przez chunk PLTE formatu PNG.
-- Prelegent na konferencjach w Polsce i za granicą (Confidence, BSIDES, GITEX, GISEC).
-
-## Foxtrot
-
-- Reprezentował Polskę w corocznych ćwiczeniach NATO Locked Shields.
-- Członek justCatTheFish — według CTFtime najlepszej polskiej drużyny CTF.
-- Zgłaszający CVE w wielu produktach klasy enterprise.
-- Magister informatyki.
-- Wykładowca Politechniki Poznańskiej.
-- Redaktor Magazynu Programista.
-- Offensive Security Certified Professional.
-
-TLBC działa międzynarodowo, obsługując obecnie klientów m.in. w Szwajcarii, Francji, Stanach Zjednoczonych, Australii i Zjednoczonych Emiratach Arabskich.
-
-Siedziba znajduje się w Toruńskim Parku Technologicznym, z dodatkowymi biurami w Poznaniu i Warszawie.
+To ciągłe dążenie do doskonalenia napędza nas na co dzień — i możesz liczyć, że ten sam sposób pracy wniesiemy do Twojej firmy.

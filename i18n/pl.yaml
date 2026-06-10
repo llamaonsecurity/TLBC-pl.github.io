@@ -42,3 +42,15 @@
 
 - id: company_details_heading
   translation: "Dane firmy"
+
+- id: privacy_policy
+  translation: "Polityka prywatności"
+
+- id: contact_privacy_policy_link
+  translation: "Link do polityki prywatności"
+
+- id: contact_gdpr_disclaimer_heading
+  translation: "Klauzula informacyjna"
+
+- id: contact_gdpr_disclaimer
+  translation: 'Administratorem Twoich danych osobowych jest TLBC spółka z ograniczoną odpowiedzialnością z siedzibą w Toruniu. Dane będą przetwarzane w celu umówienia spotkania oraz prowadzenia dalszej korespondencji na podstawie prawnie uzasadnionego interesu administratora (art. 6 ust. 1 lit. f RODO). Możesz się z nami skontaktować, wysyłając wiadomość na adres: <a href="mailto:gdpr@tlbc.pl" class="font-medium underline underline-offset-4 hover:text-primary dark:hover:text-darkmode-primary">gdpr@tlbc.pl</a>. Aby dowiedzieć się więcej o sposobie przetwarzania Twoich danych osobowych, zapoznaj się z naszą <a href="%s" class="font-medium underline underline-offset-4 hover:text-primary dark:hover:text-darkmode-primary" target="_blank" rel="noopener">Polityką prywatności</a>.'
