@@ -37,9 +37,7 @@ nip = "9562397964"
 krs = "0001138405"
 regon = "540197071"
 
-# Privacy policy PDF (static/documents/)
-[privacy_policy]
-link = "/documents/2026-05-27-polityka-prywatnosci-eng.pdf"
+# Privacy policy PDF per language — see [languages.<lang>.params.privacy_policy] in hugo.toml
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
